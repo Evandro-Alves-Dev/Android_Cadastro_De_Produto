@@ -19,7 +19,7 @@
     <ListView
         android:id="@+id/ListView"
         android:layout_width="match_parent"
-        android:layout_height="407dp" />
+        android:layout_height="300dp" />
 
     <Button
         android:id="@+id/bt_novoProduto"
@@ -27,5 +27,12 @@
         android:layout_height="wrap_content"
         android:onClick="onClickNovoProduto"
         android:text="Novo Produto" />
+
+    <Button
+        android:id="@+id/bt_novaCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCategoria"
+        android:text="Categorias" />
 
 </LinearLayout>

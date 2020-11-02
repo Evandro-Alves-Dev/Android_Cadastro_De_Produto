@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 import br.com.projeto1.database.ProdutoDAO;
 import br.com.projeto1.modelo.Produto;
+import br.com.projeto1.ListaCategoriaActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -87,17 +88,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private ArrayList<Produto> criarListaProduto() {
-        ArrayList<Produto> produtos = new ArrayList<Produto>();
-        produtos.add(new Produto(0,"Impressora", 2580f));
-        produtos.add(new Produto(1,"Teclado", 450f));
-        produtos.add(new Produto(2,"Notebook", 4500f));
-        return produtos;
-    }
-
     public void onClickNovoProduto(View v) {
         Intent intent = new Intent(MainActivity.this, CadastroProdutoActivity.class);
         startActivity(intent);
+    }
 
+    public void onClickCategoria(View v) {
+        Intent intent = new Intent(MainActivity.this, ListaCategoriaActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

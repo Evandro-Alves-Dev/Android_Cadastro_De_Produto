@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bt_novaCategoria"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_categorias"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_novaCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNovaCategoria"
+        android:text="Nova Categoria" />
+
+    <Button
+        android:id="@+id/bt_produtos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickProdutos"
+        android:text="Produtos" />
+
+</LinearLayout>

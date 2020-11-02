@@ -7,11 +7,13 @@ public class Produto implements Serializable {
     private int id;
     private String nome;
     private Float valor;
+    private Categoria categoria;
 
-    public Produto(int id, String nome, Float valor) {
+    public Produto(int id, String nome, Float valor, Categoria categoria) {
         this.id = id;
         this.nome = nome;
         this.valor = valor;
+        this.categoria = categoria;
     }
 
     public String getNome() {
@@ -38,8 +40,16 @@ public class Produto implements Serializable {
         this.id = id;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
     @Override
     public String toString() {
-        return id + " - " + nome + "  R$ " + valor;
+        return nome + "  R$ " + valor;
     }
 }
